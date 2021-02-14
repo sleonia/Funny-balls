@@ -4,7 +4,8 @@
   "description": "Simple game with balls",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/sleonia/Test-assigments#readme",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
     "awesome-typescript-loader": "^5.2.1",
+    "eslint": "^7.20.0",
     "ts-node": "^9.1.1"
   },
   "devDependencies": {

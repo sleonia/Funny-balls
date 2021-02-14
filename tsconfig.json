@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
         "baseUrl": "./",
-        "allowJs": true,
         "module": "commonjs",
         "noImplicitAny": true,
         "outDir": "./build/",
@@ -18,6 +17,7 @@
         "noImplicitReturns": true,
         "esModuleInterop": true,
         "noFallthroughCasesInSwitch": true,
+        "strictFunctionTypes": true
     },
     "include": ["src/**/*"],
     "exclude": [ "node_modules" ]

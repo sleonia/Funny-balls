@@ -1,3 +1,5 @@
 import 'styles.css';
-// document.getElementsByTagName('body').innerHtml('Hello, world!');
-console.log(1);
+
+import { App } from './App';
+
+App();
