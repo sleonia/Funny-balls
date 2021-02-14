@@ -12,6 +12,6 @@ module.exports = {
     rules: {
         "indent": ["error", 4],
         semi: "error",
-        // "no-any": 2,
+        quotes: ["error", "single"]
     }
 };
