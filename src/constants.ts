@@ -2,17 +2,16 @@ export const figuresCounts = 10;
 
 export const figureTypes = 1;
 
-export const defaultBackgroundColors = '#ffffff';
-
-// export const 
+export const defaultBackgroundColor = '#ffffff';
 
 export enum Sizes {
     Width = 500,
     Height = 900
 }
 
-export const minXSpeed = 1;
-export const maxXSpeed = 30;
+export const interval = 1;
+export const minXSpeed = 0.2;
+export const maxXSpeed = 1;
 
 export interface Position {
     x: number,

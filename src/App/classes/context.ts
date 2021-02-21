@@ -1,4 +1,4 @@
-import { Sizes, defaultBackgroundColors } from '../../constants';
+import { Sizes, defaultBackgroundColor } from '../../constants';
 import { Error } from './errors';
 
 export class Context extends Error {
@@ -12,7 +12,7 @@ export class Context extends Error {
             Error.missingContext();
         } else {
             this._context = ctx;
-            this._context.fillStyle = defaultBackgroundColors;
+            this._context.fillStyle = defaultBackgroundColor;
             this._context.fillRect(0, 0, Sizes.Width, Sizes.Height);
         }
     }

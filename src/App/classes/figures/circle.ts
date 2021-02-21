@@ -23,10 +23,6 @@ export class Circle extends Figure {
         context.fill();
     }
 
-    public updatePosition(): void {
-        this.getPosition().y -= 1;
-    }
-
     public getRadius(): number {
         return this._radius;
     }

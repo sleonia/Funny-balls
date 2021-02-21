@@ -3,3 +3,4 @@ export { generateRandomFigure } from './random/generateRandomFigure';
 export { makeFigures } from './makeFigures';
 export { generateRandomPosition } from './random/generateRandomPosition';
 export { generateRandomRadius } from './random/generateRandomRadius';
+export { generateRandomSpeed } from './random/generateRandomSpeed';
