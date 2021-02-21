@@ -1,15 +1,26 @@
 import { Figure } from './figure';
+import { generateRandomRadius } from '../../utils';
 
 export class Circle extends Figure {
     private _radius: number;
 
     constructor() {
         super();
-        this._radius = 40;
+        this._radius = generateRandomRadius();
     }
 
-    public draw(): number {
-        return 10;
+    public draw(context: CanvasRenderingContext2D): void {
+        context.beginPath();
+        context.arc(
+            this.getPosition().x,
+            this.getPosition().y,
+            this.getRadius(),
+            0,
+            2 * Math.PI,
+            true
+        );
+        context.fillStyle = this.getColor();
+        context.fill();
     }
 
     public getRadius(): number {

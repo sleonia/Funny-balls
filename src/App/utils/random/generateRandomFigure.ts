@@ -1,4 +1,4 @@
-import { Figure, Circle } from '../classes/figures';
+import { Figure, Circle } from '../../classes/figures';
 // import { figureTypes } from '../../constants';
 
 export const generateRandomFigure = (): Figure => {

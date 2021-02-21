@@ -1,4 +1,4 @@
-import { Position, minX, maxX, minY, maxY } from '../../constants';
+import { Position, minX, maxX, minY, maxY } from '../../../constants';
 
 export const generateRandomPosition = (): Position => {
     const x: number = Math.floor((Math.random() * maxX) + minX);

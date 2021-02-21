@@ -1,11 +1,8 @@
-import { Sizes } from '../constants';
-// import { Sizes, figuresCounts } from '../constants';
+import { Sizes, figuresCounts } from '../constants';
 import { Context } from './classes/context';
-// import { Figure } from './figures/figure';
 import { makeFigures } from './utils';
 import { Error } from './classes/errors';
-// import { Figure } from './classes/figures';
-// import { Error, makeFigures } from './utils';
+import { Figure } from './classes/figures';
 
 export const App = (): void => {
     const canvas = <HTMLCanvasElement>document.getElementsByTagName('canvas')[0];
@@ -16,8 +13,11 @@ export const App = (): void => {
     if (!context) {
         Error.missingContext();
     } else {
-        context.beginPath();
-        makeFigures(2, context.get());
+        const figures: Figure[] = makeFigures(figuresCounts);
+
+        figures.forEach(figure => {
+            figure.draw(context.get());
+        });
     }
 
 };

@@ -16,6 +16,9 @@ export interface Position {
     y: number
 }
 
+export const minRadius = 20;
+export const maxRadius = 100;
+
 export const minX = 0;
 export const maxX = Sizes.Width;
 export const minY = 0;
