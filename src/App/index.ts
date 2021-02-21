@@ -4,10 +4,8 @@ import {
     defaultBackgroundColor,
     interval
 } from '../constants';
-import { Context } from './classes/context';
+import { Context, Error, Figure } from './classes';
 import { makeFigures } from './utils';
-import { Error } from './classes/errors';
-import { Figure } from './classes/figures';
 
 export const App = (): void => {
     const canvas = <HTMLCanvasElement>document.getElementsByTagName('canvas')[0];

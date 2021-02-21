@@ -1,4 +1,4 @@
-import { Figure } from '../classes/figures';
+import { Figure } from '../classes';
 import { generateRandomFigure } from '../utils';
 
 export const makeFigures = (figuresCounts: number): Figure[] => {
