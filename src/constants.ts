@@ -4,12 +4,15 @@ export const figureTypes = 1;
 
 export const defaultBackgroundColors = '#ffffff';
 
+// export const 
+
 export enum Sizes {
     Width = 500,
     Height = 900
 }
 
-export const defaultColor = '#FFFFFF';
+export const minXSpeed = 1;
+export const maxXSpeed = 30;
 
 export interface Position {
     x: number,

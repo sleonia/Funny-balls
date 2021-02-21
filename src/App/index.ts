@@ -15,9 +15,14 @@ export const App = (): void => {
     } else {
         const figures: Figure[] = makeFigures(figuresCounts);
 
-        figures.forEach(figure => {
-            figure.draw(context.get());
-        });
+        setInterval(() => {
+            context.get().fillStyle = '#ffffff';
+            context.get().fillRect(0, 0, Sizes.Width, Sizes.Height);
+            figures.forEach(figure => {
+                figure.updatePosition();
+                figure.draw(context.get());
+            });
+        }, 10);
     }
 
 };

@@ -15,6 +15,8 @@ export abstract class Figure {
 
     abstract draw(context: CanvasRenderingContext2D): void;
 
+    abstract updatePosition(): void;
+
     public getPosition(): Position {
         return this._pos;
     }
