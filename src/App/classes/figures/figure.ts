@@ -1,13 +1,20 @@
-import { Position } from '../contants';
-import { generateRandomColor } from '../utils/index';
+import { Position } from '../../../constants';
+import {
+    generateRandomPosition,
+    generateRandomColor
+} from '../../utils';
 
 export abstract class Figure {
     private _pos: Position;
     private _color!: string;
 
-    constructor(pos: Position) {
-        this._pos = pos;
+    constructor() {
+        this._pos = generateRandomPosition();
         this._color = generateRandomColor();
+    }
+
+    public draw(): void {
+        //
     }
 
     public getPosition(): Position {

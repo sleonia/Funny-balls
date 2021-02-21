@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { UnusedFilesWebpackPlugin } = require("unused-files-webpack-plugin");
+const { UnusedFilesWebpackPlugin } = require('unused-files-webpack-plugin');
 
 module.exports = {
     entry: './src/index.ts',
@@ -13,8 +13,8 @@ module.exports = {
         publicPath: '/',
     },
     resolve: {
-        extensions: [".ts", ".js"],
-        modules: ["src", "node_modules"],
+        extensions: ['.ts', '.js'],
+        modules: ['src', 'node_modules'],
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
@@ -39,12 +39,12 @@ module.exports = {
     plugins: [
         new UnusedFilesWebpackPlugin({
             ignore: [
-                "node_modules/**/*",
-                "package-lock.json",
-                "package.json",
-                "README.md",
-                "tsconfig.json",
-                "webpack.config.js"
+                'node_modules/**/*',
+                'package-lock.json',
+                'package.json',
+                'README.md',
+                'tsconfig.json',
+                'webpack.config.js'
             ]
         }),
         new HtmlWebpackPlugin({

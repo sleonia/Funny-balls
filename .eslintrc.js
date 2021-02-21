@@ -1,17 +1,17 @@
 module.exports = {
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 2020,
-        sourceType: "module"
+        sourceType: 'module'
     },
   
     extends: [
-        "plugin:@typescript-eslint/recommended"
+        'plugin:@typescript-eslint/recommended'
     ],
   
     rules: {
-        "indent": ["error", 4],
-        semi: "error",
-        quotes: ["error", "single"]
+        'indent': ['error', 4, {'SwitchCase': 1}],
+        semi: 'error',
+        quotes: ['error', 'single']
     }
 };
