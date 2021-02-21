@@ -13,8 +13,7 @@ export abstract class Figure {
         this._color = generateRandomColor();
     }
 
-    // 
-    public draw(context: CanvasRenderingContext2D): void {}
+    abstract draw(context: CanvasRenderingContext2D): void;
 
     public getPosition(): Position {
         return this._pos;
