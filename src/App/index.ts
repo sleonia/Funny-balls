@@ -1,9 +1,4 @@
-import {
-    Sizes,
-    figuresCounts,
-    defaultBackgroundColor,
-    interval
-} from '../constants';
+import { Sizes, figuresCounts, interval } from '../constants';
 import { Context, Error, Figure } from './classes';
 import { makeFigures } from './utils';
 
@@ -19,8 +14,7 @@ export const App = (): void => {
         const figures: Figure[] = makeFigures(figuresCounts);
 
         setInterval(() => {
-            context.get().fillStyle = defaultBackgroundColor;
-            context.get().fillRect(0, 0, Sizes.Width, Sizes.Height);
+            context.setBackground();
             figures.forEach(figure => {
                 figure.updatePosition();
                 figure.draw(context.get());

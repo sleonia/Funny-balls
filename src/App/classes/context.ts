@@ -12,17 +12,13 @@ export class Context extends Error {
             Error.missingContext();
         } else {
             this._context = ctx;
-            this._context.fillStyle = defaultBackgroundColor;
-            this._context.fillRect(0, 0, Sizes.Width, Sizes.Height);
+            this.setBackground();
         }
     }
-
-    public beginPath(): void {
-        this._context.beginPath();
-    }
-
-    public stroke(): void {
-        this._context.stroke();
+    
+    public setBackground(): void {
+        this._context.fillStyle = defaultBackgroundColor;
+        this._context.fillRect(0, 0, Sizes.Width, Sizes.Height);
     }
 
     public get(): CanvasRenderingContext2D {

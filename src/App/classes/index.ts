@@ -1,3 +1,3 @@
 export { Error } from './errors';
 export { Context } from './context';
-export { Figure, Circle } from './figures';
+export { Figure, Circle, Rectangle } from './figures';

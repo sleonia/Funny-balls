@@ -1,6 +1,6 @@
 export const figuresCounts = 10;
 
-export const figureTypes = 1;
+export const figureTypes = 2;
 
 export const defaultBackgroundColor = '#ffffff';
 
@@ -18,6 +18,16 @@ export interface Position {
     y: number
 }
 
+export interface Size {
+    height: number,
+    width: number
+}
+
+export const minHeight = 20;
+export const maxHeight = 100;
+export const minWidth = 20;
+export const maxWidth = 100;
+
 export const minRadius = 20;
 export const maxRadius = 100;
 
@@ -25,3 +35,9 @@ export const minX = 0;
 export const maxX = Sizes.Width;
 export const minY = 0;
 export const maxY = Sizes.Height;
+
+export enum Direction {
+    Top,
+    Bottom
+}
+
