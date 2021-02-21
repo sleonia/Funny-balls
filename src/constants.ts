@@ -1,6 +1,6 @@
 export const figuresCounts = 10;
 
-export const figureTypes = 2;
+export const figureTypes = 3;
 
 export const defaultBackgroundColor = '#ffffff';
 

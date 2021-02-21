@@ -16,7 +16,6 @@ export abstract class Figure {
         this._pos = generateRandomPosition();
         this._color = generateRandomColor();
         this._speed = generateRandomSpeed();
-        // this._direction = Direction.Top;
         this._direction = generateRandomDirection();
     }
 

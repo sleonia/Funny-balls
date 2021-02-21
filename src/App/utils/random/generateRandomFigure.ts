@@ -1,4 +1,4 @@
-import { Figure, Circle, Rectangle } from '../../classes';
+import { Figure, Circle, Rectangle, Triangle } from '../../classes';
 import { figureTypes } from '../../../constants';
 
 export const generateRandomFigure = (): Figure => {
@@ -10,6 +10,10 @@ export const generateRandomFigure = (): Figure => {
 
         case 1: {
             return new Rectangle();
+        }
+
+        case 2: {
+            return new Triangle();
         }
     }
     return new Circle();
