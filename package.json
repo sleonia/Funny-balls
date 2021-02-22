@@ -4,7 +4,7 @@
   "description": "Simple game with balls",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --config ./webpack.config.js --open",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'"
   },
   "repository": {
