@@ -34,6 +34,10 @@ export abstract class Figure {
         }
     }
 
+    // public isHidden(): boolean {
+
+    // }
+
     public getPosition(): Position {
         return this._pos;
     }
