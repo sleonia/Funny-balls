@@ -18,9 +18,14 @@ export class Engine {
     public start(): void {
         this._interval = setInterval(() => {
             this._context.setBackground();
-            this._figures.forEach(figure => {
-                figure.updatePosition();
-                figure.draw(this._context.get());
+
+            this._figures.filter(figure => {
+                if (figure.isVisible()) {
+                    figure.updatePosition();
+                    figure.draw(this._context.get());
+                    return true;
+                }
+                return false;
             });
         }, INTERVAL_UPDATER);
 

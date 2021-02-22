@@ -34,6 +34,8 @@ export abstract class Figure {
         }
     }
 
+    abstract isVisible(): boolean;
+
     public getPosition(): Position {
         return this._pos;
     }

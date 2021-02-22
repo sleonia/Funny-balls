@@ -1,4 +1,4 @@
-import { Sizes, defaultBackgroundColor } from '../../constants';
+import { Screen, defaultBackgroundColor } from '../../constants';
 import { Error } from './errors';
 
 export class Context extends Error {
@@ -18,7 +18,7 @@ export class Context extends Error {
     
     public setBackground(): void {
         this._context.fillStyle = defaultBackgroundColor;
-        this._context.fillRect(0, 0, Sizes.Width, Sizes.Height);
+        this._context.fillRect(0, 0, Screen.Width, Screen.Height);
     }
 
     public get(): CanvasRenderingContext2D {

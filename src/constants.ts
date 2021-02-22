@@ -4,7 +4,7 @@ export const figureTypes = 3;
 
 export const defaultBackgroundColor = '#ffffff';
 
-export enum Sizes {
+export enum Screen {
     Width = 500,
     Height = 900
 }
@@ -31,9 +31,9 @@ export const minRadius = 20;
 export const maxRadius = 100;
 
 export const minX = 0;
-export const maxX = Sizes.Width;
+export const maxX = Screen.Width;
 export const minY = 0;
-export const maxY = Sizes.Height;
+export const maxY = Screen.Height;
 
 export enum Direction {
     Top,

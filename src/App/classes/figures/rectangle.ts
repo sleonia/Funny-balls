@@ -1,6 +1,7 @@
 import { Figure } from './figure';
 import { generateRandomSize } from '../../utils';
 import { Size } from '../../../constants';
+import { Screen } from '../../../constants';
 
 export class Rectangle extends Figure {
     private _size: Size;
@@ -20,6 +21,15 @@ export class Rectangle extends Figure {
         );
         context.fillStyle = this.getColor();
         context.fill();
+    }
+
+    public isVisible(): boolean {
+        if (this.getPosition().y > Screen.Height
+            || this.getPosition().y + this.getSize().height < 0) {
+            return false;
+        }
+
+        return true;
     }
 
     public getSize(): Size {

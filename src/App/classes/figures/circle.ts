@@ -1,4 +1,5 @@
 import { Figure } from './figure';
+import { Screen } from '../../../constants';
 import { generateRandomRadius } from '../../utils';
 
 export class Circle extends Figure {
@@ -21,6 +22,15 @@ export class Circle extends Figure {
         );
         context.fillStyle = this.getColor();
         context.fill();
+    }
+
+    public isVisible(): boolean {
+        if (this.getPosition().y - this.getRadius() > Screen.Height
+            || this.getPosition().y + this.getRadius() < 0) {
+            return false;
+        }
+
+        return true;
     }
 
     public getRadius(): number {
