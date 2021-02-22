@@ -1,4 +1,4 @@
-export const figuresCounts = 10;
+export const figuresCounts = 20;
 
 export const figureTypes = 3;
 
