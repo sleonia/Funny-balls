@@ -23,6 +23,8 @@
     "@typescript-eslint/parser": "^4.15.0",
     "awesome-typescript-loader": "^5.2.1",
     "eslint": "^7.20.0",
+    "postcss-loader": "^5.0.0",
+    "style-loader": "^2.0.0",
     "ts-node": "^9.1.1"
   },
   "devDependencies": {
