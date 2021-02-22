@@ -9,7 +9,6 @@ export enum Sizes {
     Height = 900
 }
 
-export const interval = 1;
 export const minXSpeed = 0.2;
 export const maxXSpeed = 1;
 
