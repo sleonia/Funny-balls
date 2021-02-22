@@ -3,15 +3,20 @@ import { makeFigures } from '../utils';
 import { figuresCounts } from '../../constants';
 
 export class Engine {
+    private _context: Context;
     private _interval!: NodeJS.Timeout;
     private _figures: Figure[] = makeFigures(figuresCounts);
 
-    public start(context: Context): void {
+    constructor(context: Context) {
+        this._context = context;
+    }
+
+    public start(): void {
         this._interval = setInterval(() => {
-            context.setBackground();
+            this._context.setBackground();
             this._figures.forEach(figure => {
                 figure.updatePosition();
-                figure.draw(context.get());
+                figure.draw(this._context.get());
             });
         }, 1);
     }
